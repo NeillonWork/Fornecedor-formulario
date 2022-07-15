@@ -1,13 +1,4 @@
-﻿html{
-    /*variaveis para gerar teplate de cores*/
-    --bg-color: #ffffff;
-    --text-color: #ffffff;
-    --header-color: #ffffff;
-    --bg-card-color: #ffffff;
-    --btn-vintage: #E9DAC1; 
-    --btn-pastel: #B7D3DF; 
-    --bnt-neon:#A91079;
-}
+﻿
   /*Templates de cores*/
 body.vintage{
     --bg-color: #18978F;
