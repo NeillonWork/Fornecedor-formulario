@@ -1,0 +1,29 @@
+﻿body {
+    background-color   : #0068AD;
+    color              : #313131;
+    font-family        : 'Roboto', sans-serif;
+    /*inicio bloqueio de seleção*/
+    -webkit-user-select: none;
+    -moz-user-select   : -moz-none;
+    -ms-user-select    : none;
+    user-select        : none;
+    /*Fim bloqueio de seleção*/
+}
+
+.container-custom {
+    max-width: 1920px;
+}
+
+.bg-darkCustom {
+    background-color: #777777;
+}
+
+.bg-lightCustom {
+    background-color: #EEEEEE;
+}
+
+.tableCustom {
+    background-color: #ffffff;
+    border          : none;
+    border-bottom   : 1px solid #f2f2f2 !important;
+}
