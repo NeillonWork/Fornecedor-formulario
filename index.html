@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -32,10 +32,10 @@
     <!-- scripts -->
     <script src="js/sweetalert2.all.min.js"></script>
 
-    <title>Hello - Cadastro</title>
+    <title>Cadastro</title>
 </head>
 
-<body>
+<body class="pastel" id="bodyColor">
     <header>
         <!--Menu superior  -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -72,6 +72,17 @@
             <!--Formulario-->
             <section>
                 <div class="d-grid d-md-flex justify-content-md-end mt-4">
+                    <div class="btn-group btn-group-sm me-2 btn-template" role="group"
+                        aria-label="Basic radio toggle button group" onclick="seletorColors()">
+                        <input type="radio" class="btn-check" name="btnradio" id="vintage" autocomplete="off">
+                        <label class="btn btn-thema" for="vintage">Vintage</label>
+
+                        <input type="radio" class="btn-check" name="btnradio" id="pastel" autocomplete="off" checked>
+                        <label class="btn btn-thema" for="pastel">Pastel</label>
+
+                        <input type="radio" class="btn-check" name="btnradio" id="neon" autocomplete="off">
+                        <label class="btn btn-thema" for="neon">Neon</label>
+                    </div>
                     <button class="btn btn-outline-primary btn-sm text-white border-white" type="button"
                         data-bs-toggle="collapse" href="#collapseExample" aria-expanded="false"
                         aria-controls="collapseExample">+ Adicionar Fornecedor</button>

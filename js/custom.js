@@ -1,8 +1,5 @@
-
 $(document).ready(function () {
     $('#tabela').DataTable({
-
-
 
         "language": {
 
@@ -254,16 +251,6 @@ $(document).ready(function () {
 });
 
 
-//mascara CNPJ
-function formatar(mascara, documento) {
-    var i = documento.value.length;
-    var saida = mascara.substring(0, 1);
-    var texto = mascara.substring(i)
-
-    if (texto.substring(0, 1) != saida) {
-        documento.value += texto.substring(0, 1);
-    }
-}
 
 // Example starter JavaScript for disabling form submissions if there are invalid fields
 (function () {
@@ -366,5 +353,31 @@ $(document).ready(function () {
     });
 });
 
-// Tradutor
 
+function seletorColors() {
+
+    //ATENÇÃO: Melhorar esta logica !!!!
+    const bodyThema = document.querySelector("#bodyColor")
+    const el = event.target || event.srcElement;
+    const id = el.id;
+
+    document.querySelectorAll("input").forEach(function (input) {
+        input.addEventListener("click", function (event) { });
+
+    });
+
+    if (id == 'neon') {
+        bodyThema.className = ''
+        bodyThema.classList.add('neon')
+
+    }
+    else if (id == 'pastel') {
+        bodyThema.className = ''
+        bodyThema.classList.add('pastel')
+    }
+    else if (id == 'vintage') {
+        bodyThema.className = ''
+        bodyThema.classList.add('vintage')
+    }
+
+}
