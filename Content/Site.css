@@ -102,6 +102,46 @@ body {
     color: var(--text-color);
 }
 
+a{
+    text-decoration: none;
+    color: var(--bg-btn-color);
+  }
+  
+  footer{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+
+    margin-top: 24px; 
+    transition: filter .2s;
+    opacity: 0.7;
+  }
+  
+  footer a:hover{
+   color: var(--bg-btn-color);
+   filter:brightness(1.2);
+   cursor: pointer;
+  
+  }
+  .rodape{
+    display:flex;
+    align-items:center;
+    padding: 24px;
+    gap: 10px;
+  }
+  
+  .gitlogo{
+    max-width: 24px;
+  }
+  
+  .fade-in{
+    animation: fadeIn 5s;
+  }
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
 @media (min-width: 100px) and (max-width: 768px) {
     .btn-template{
         margin-bottom: 1.5rem !important;
